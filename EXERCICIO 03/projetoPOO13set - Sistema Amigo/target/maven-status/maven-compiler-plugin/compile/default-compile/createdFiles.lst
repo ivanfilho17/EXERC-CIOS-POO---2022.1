@@ -1,0 +1,9 @@
+br\ufpb\dcx\amigosecreto\Amigo.class
+br\ufpb\dcx\amigosecreto\AmigoNaoSorteadoException.class
+br\ufpb\dcx\amigosecreto\MensagemParaAlguem.class
+br\ufpb\dcx\amigosecreto\AmigoJaExisteException.class
+br\ufpb\dcx\amigosecreto\AmigoInexistenteException.class
+br\ufpb\dcx\amigosecreto\SistemaAmigo.class
+br\ufpb\dcx\amigosecreto\MensagemParaTodos.class
+org\example\App.class
+br\ufpb\dcx\amigosecreto\Mensagem.class
