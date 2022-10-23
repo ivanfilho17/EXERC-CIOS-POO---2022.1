@@ -26,7 +26,7 @@ public class SistemaEleitoralGUI extends JFrame {
         setSize(700, 550);
         setLocation(150, 150);
         setResizable(false);
-        getContentPane().setBackground(Color.green);
+        getContentPane().setBackground(Color.orange);
         linha1 = new JLabel("SISTEMA ELEITORAL", JLabel.CENTER);
         linha1.setForeground(Color.blue);
         linha1.setFont(new Font("Arial", Font.BOLD, 20));

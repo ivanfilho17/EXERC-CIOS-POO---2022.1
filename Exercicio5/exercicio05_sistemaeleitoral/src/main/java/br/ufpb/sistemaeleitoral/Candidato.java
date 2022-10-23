@@ -37,7 +37,7 @@ public class Candidato {
 
     @Override
     public String toString() {
-        return "Candidato [Nome =" + nome + ", Número =" + numero + ", Partido =" + partido + "]";
+        return "Candidato [nome=" + nome + ", numero=" + numero + ", partido=" + partido + "]";
     }
 
     

@@ -16,7 +16,12 @@ public class SistemaEleitoralContarVotosController implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        int numero = Integer.parseInt(JOptionPane.showInputDialog(janelaPrincipal, "QUAL O NÚMERO DO CANDIDATO QUE DESEJA CONTAR OS VOTOS?"));
-        JOptionPane.showMessageDialog(janelaPrincipal, sistemaEleitoral.contarVotosParaCandidato(numero));
+        String num = JOptionPane.showInputDialog(janelaPrincipal, "QUAL O NÚMERO DO CANDIDATO QUE DESEJA CONTAR OS VOTOS?");
+        int numero = Integer.parseInt(num);
+        if(num == null || numero <= 0 ) {
+            JOptionPane.showMessageDialog(janelaPrincipal, "Erro ao contar votos \nNão foi informado o numero do candidato válido");
+        } else {
+            JOptionPane.showMessageDialog(janelaPrincipal, "Quantidade de Votos do Candidato de numero " + numero + ": " + sistemaEleitoral.contarVotosParaCandidato(numero));
+        }
     }
 }

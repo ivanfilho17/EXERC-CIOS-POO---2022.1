@@ -32,8 +32,8 @@ public class SistemaEleitoralMapTest {
     @Test
     public void testaVoto() {
         try {
-            boolean cadastroEleitor = sistema.cadastraEleitor("João", "2222-2");
-            boolean cadastroCandidato2 = sistema.cadastraCandidato("Lukas", 70, Partido.PARTIDO2);
+            sistema.cadastraEleitor("João", "2222-2");
+            sistema.cadastraCandidato("Lukas", 70, Partido.PARTIDO2);
             Voto voto1 = new Voto(70);
             assertEquals(0, sistema.contarVotosParaCandidato(70));
             sistema.votar("2222-2", voto1.getNumeroVotado());
@@ -47,7 +47,7 @@ public class SistemaEleitoralMapTest {
     @Test
     public void testaObterDadosDoCandidato() {
         Candidato candidato2 = new Candidato("Maria", 44, Partido.PARTIDO2);
-        boolean cadastroCandidato2 = sistema.cadastraCandidato(candidato2.getNome(), candidato2.getNumero(), candidato2.getPartido());
+        sistema.cadastraCandidato(candidato2.getNome(), candidato2.getNumero(), candidato2.getPartido());
         assertEquals(44, candidato2.getNumero());
         assertTrue(candidato2.getPartido() == Partido.PARTIDO2);
         assertTrue(candidato2.getNome().equals("Maria"));
