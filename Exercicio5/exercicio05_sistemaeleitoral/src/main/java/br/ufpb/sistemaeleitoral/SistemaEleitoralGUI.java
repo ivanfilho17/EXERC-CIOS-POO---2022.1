@@ -58,7 +58,7 @@ public class SistemaEleitoralGUI extends JFrame {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         JFrame janela = new SistemaEleitoralGUI();
         janela.setVisible(true);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
